@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import PeriodicTable from "./PeriodicTable/PeriodicTable";
-import ElementDefinition from "./ElementDefinition/ElementDefinition";
+import ElementProperties from "./ElementProperties/ElementProperties";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -9,14 +9,14 @@ function App() {
     <div className="app">
       <div className="header">
         <Link to="/">
-          <h1>Periodic Table</h1>
+          <h2>Periodic Table</h2>
         </Link>
       </div>
       <Routes>
         <Route path="/" element={<PeriodicTable></PeriodicTable>}></Route>
         <Route
           path="/element"
-          element={<ElementDefinition></ElementDefinition>}
+          element={<ElementProperties></ElementProperties>}
         ></Route>
       </Routes>
     </div>
