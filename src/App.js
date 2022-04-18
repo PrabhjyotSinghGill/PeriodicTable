@@ -3,6 +3,7 @@ import "./App.css";
 import PeriodicTable from "./PeriodicTable/PeriodicTable";
 import ElementProperties from "./ElementProperties/ElementProperties";
 import { Routes, Route, Link } from "react-router-dom";
+import Model from "./Model/Model";
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Routes>
         <Route path="/" element={<PeriodicTable></PeriodicTable>}></Route>
         <Route
-          path="/element"
+          path="/element/:atomicNumber"
           element={<ElementProperties></ElementProperties>}
         ></Route>
       </Routes>
+      <div className="footer"></div>
     </div>
   );
 }

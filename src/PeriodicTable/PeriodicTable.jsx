@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./PeriodicTable.css";
+import { Link } from "react-router-dom";
+import { backgroundColor } from "../utils/backgroundColor";
 
 const renderElementsInSimpleFormat = (data) => {
   return (
@@ -29,11 +31,17 @@ function PeriodicTable() {
 export default PeriodicTable;
 
 const getData = async () => {
-  let response = await fetch(
-    "https://periodic-table-elements-info.herokuapp.com/elements"
-  );
-  let data = await response.json();
-  return data;
+  let elementsFromLocalStorage = localStorage.getItem("periodic-table-element");
+  if (elementsFromLocalStorage) {
+    return JSON.parse(elementsFromLocalStorage);
+  } else {
+    let response = await fetch(
+      "https://periodic-table-elements-info.herokuapp.com/elements"
+    );
+    let data = await response.json();
+    localStorage.setItem("periodic-table-element", JSON.stringify(data));
+    return data;
+  }
 };
 
 const getElementsForGrid = (data) => {
@@ -55,10 +63,15 @@ const getElementAtRowAndColumn = (elements, row, column) => {
     }
     if (element.period === row && element.group === column) {
       return (
-        <div key={`${row}-${column}`} className="gridElement">
+        <Link
+          to={`/element/${element.atomicNumber}`}
+          key={`${row}-${column}`}
+          className="gridElement"
+          style={{ background: backgroundColor(element.period, element.group) }}
+        >
           <div className="gridElementAtomicNumber">{element.atomicNumber}</div>
           <div className="gridElementSymbol">{element.symbol}</div>
-        </div>
+        </Link>
       );
     }
   }
