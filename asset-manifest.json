@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PeriodicTable/static/css/main.fbecfa50.css",
-    "main.js": "/PeriodicTable/static/js/main.73e4221a.js",
+    "main.js": "/PeriodicTable/static/js/main.d6814820.js",
     "index.html": "/PeriodicTable/index.html",
     "main.fbecfa50.css.map": "/PeriodicTable/static/css/main.fbecfa50.css.map",
-    "main.73e4221a.js.map": "/PeriodicTable/static/js/main.73e4221a.js.map"
+    "main.d6814820.js.map": "/PeriodicTable/static/js/main.d6814820.js.map"
   },
   "entrypoints": [
     "static/css/main.fbecfa50.css",
-    "static/js/main.73e4221a.js"
+    "static/js/main.d6814820.js"
   ]
 }
