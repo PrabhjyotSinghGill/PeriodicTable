@@ -7,7 +7,8 @@
   border-radius: 5px;
   padding: 5px;
   margin-top: 50px;
-  margin-bottom: auto;
+  margin-bottom: 50px;
+  overflow-y: scroll;
 }
 
 .infoHeader {
@@ -73,7 +74,26 @@
   font-size: small;
   padding: 10px 3px;
 }
+
+.backButton {
+  padding: 25px 50px;
+}
 .info {
   display: flex;
   flex: 4;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+}
+
+.element {
+  display: flex;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  border-bottom: 1px solid rgba(189, 193, 198, 0.2);
+  font-size: large;
+  padding-top: 5px;
 }

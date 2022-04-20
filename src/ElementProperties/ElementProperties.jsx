@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getElementProperties } from "../utils/data-util";
 import "./ElementProperties.css";
 import Model from "../Model/Model";
@@ -37,8 +37,20 @@ function ElementProperties() {
           <div className="infoHeaderDetailD1">{element?.name}</div>
           <div className="infoHeaderDetailD2">{element?.groupBlock}</div>
         </div>
+        <Link to="/" className="backButton">
+          back
+        </Link>
       </div>
       <div className="info">
+        <div className="details">
+          {element &&
+            Object.keys(element).map((key) => (
+              <div
+                className="element"
+                key={`${element.symbol}-${key}`}
+              >{`${key}: ${element[key]}`}</div>
+            ))}
+        </div>
         <Model
           atomicNumber={element?.atomicNumber}
           symbol={element?.symbol}
