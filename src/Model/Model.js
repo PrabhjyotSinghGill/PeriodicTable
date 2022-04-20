@@ -1,11 +1,11 @@
 import React from "react";
 import "./Model.css";
 
-function Model({ atomicNumber, symbol}) {
+function Model({ atomicNumber, symbol }) {
   return (
     <div className="modelViewer">
-      <h3>{atomicNumber}</h3>
-      <h3>{symbol}</h3>
+      {/* <h3>{atomicNumber}</h3>
+      <h3>{symbol}</h3> */}
       <model-viewer
         src={process.env.PUBLIC_URL + `/${atomicNumber}.glb`}
         className="sodium"
