@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PeriodicTable/static/css/main.fbecfa50.css",
+    "main.js": "/PeriodicTable/static/js/main.73e4221a.js",
+    "index.html": "/PeriodicTable/index.html",
+    "main.fbecfa50.css.map": "/PeriodicTable/static/css/main.fbecfa50.css.map",
+    "main.73e4221a.js.map": "/PeriodicTable/static/js/main.73e4221a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbecfa50.css",
+    "static/js/main.73e4221a.js"
+  ]
+}
