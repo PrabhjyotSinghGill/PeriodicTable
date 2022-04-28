@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PeriodicTable/static/css/main.fbecfa50.css",
-    "main.js": "/PeriodicTable/static/js/main.0d036979.js",
+    "main.css": "/PeriodicTable/static/css/main.7f00bf95.css",
+    "main.js": "/PeriodicTable/static/js/main.80522536.js",
     "index.html": "/PeriodicTable/index.html",
-    "main.fbecfa50.css.map": "/PeriodicTable/static/css/main.fbecfa50.css.map",
-    "main.0d036979.js.map": "/PeriodicTable/static/js/main.0d036979.js.map"
+    "main.7f00bf95.css.map": "/PeriodicTable/static/css/main.7f00bf95.css.map",
+    "main.80522536.js.map": "/PeriodicTable/static/js/main.80522536.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbecfa50.css",
-    "static/js/main.0d036979.js"
+    "static/css/main.7f00bf95.css",
+    "static/js/main.80522536.js"
   ]
 }
