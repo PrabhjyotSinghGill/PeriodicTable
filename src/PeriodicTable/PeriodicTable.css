@@ -7,14 +7,12 @@
   color: rgba(232, 234, 237, 1);
 }
 
-.periodicTable > div {
-}
-
 .periodicTableGrid {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   /* margin-left: 50px; */
   margin-top: 50px;
+  margin-bottom: 50px;
   width: fit-content;
   align-self: center;
   justify-self: center;

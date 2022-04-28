@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    color: #bdc1c6;
+    border-top: 1px solid #bdc1c6;
+  }
+  
+  .footerCol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 10%;
+  }
+  
+  
+  

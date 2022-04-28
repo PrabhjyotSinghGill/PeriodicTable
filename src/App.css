@@ -18,3 +18,11 @@ a {
   text-decoration: none;
   color: #e8eaed;
 }
+
+.periodicTableContainer{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
